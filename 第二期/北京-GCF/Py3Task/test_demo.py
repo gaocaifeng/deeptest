@@ -5,7 +5,8 @@ from selenium import webdriver
 __author__ = '米饭'
 
 """
-    任务1：实现pytest-selenium输出HTML格式报告 ==》需要安装第三方插件pytest-html
+    任务1：实现pytest-selenium输出HTML格式报告 ==》需要安装第三方插件pytest-html,在控制台运行
+    pytest --driver Chrome --html=.\report.html生成html报告
     任务2：使用pytest -h了解pytest各命令行参数的含义，总结
     pytest-selenium使用
     1.安装pytest
@@ -33,9 +34,8 @@ def test_baidu_search(driver):
     kw = driver.find_element_by_id("kw")
     su = driver.find_element_by_id("su")
 
-
     # 输入待搜索关键字
-    kw.send_keys("开源测试1")
+    kw.send_keys("开源测试")
     su.click()
 
     # 强势等待
@@ -47,5 +47,9 @@ def test_baidu_search(driver):
     assert title == "开源测试_百度搜索", "pass"
     # 断言fail，异常断言，使用pytest.raise
     # assert title != "开源测试_百度搜索", "fail"
-    with pytest.raises(False):
-        title != "开源测试_百度搜索"
+    # with pytest.raises(False):
+      #  title != "开源测试_百度搜索"
+
+if __name__ == "__main__":
+    pytest.main()   # 遍历相同目录下的所有test开头的用例
+    pytest.main("./test_demo.py")

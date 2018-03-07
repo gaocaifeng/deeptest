@@ -1,4 +1,3 @@
 {
-  "test_demo.py::test_ass": true,
-  "test_demo.py::test_baidu_search": true
+  "test_demo.py::test_ass": true
 }

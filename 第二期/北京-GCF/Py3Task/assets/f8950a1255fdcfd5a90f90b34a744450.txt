@@ -1,0 +1,200 @@
+[1.016][INFO]: COMMAND InitSession {
+   "capabilities": {
+      "alwaysMatch": {
+         "browserName": "chrome",
+         "goog:chromeOptions": {
+            "args": [  ],
+            "extensions": [  ]
+         },
+         "platformName": "any"
+      },
+      "firstMatch": [ {
+
+      } ]
+   },
+   "desiredCapabilities": {
+      "browserName": "chrome",
+      "goog:chromeOptions": {
+         "args": [  ],
+         "extensions": [  ]
+      },
+      "platform": "ANY",
+      "version": ""
+   }
+}
+[1.025][INFO]: Populating Preferences file: {
+   "alternate_error_pages": {
+      "enabled": false
+   },
+   "autofill": {
+      "enabled": false
+   },
+   "browser": {
+      "check_default_browser": false
+   },
+   "distribution": {
+      "import_bookmarks": false,
+      "import_history": false,
+      "import_search_engine": false,
+      "make_chrome_default_for_user": false,
+      "show_welcome_page": false,
+      "skip_first_run_ui": true
+   },
+   "dns_prefetching": {
+      "enabled": false
+   },
+   "profile": {
+      "content_settings": {
+         "pattern_pairs": {
+            "https://*,*": {
+               "media-stream": {
+                  "audio": "Default",
+                  "video": "Default"
+               }
+            }
+         }
+      },
+      "default_content_setting_values": {
+         "geolocation": 1
+      },
+      "default_content_settings": {
+         "geolocation": 1,
+         "mouselock": 1,
+         "notifications": 1,
+         "popups": 1,
+         "ppapi-broker": 1
+      },
+      "password_manager_enabled": false
+   },
+   "safebrowsing": {
+      "enabled": false
+   },
+   "search": {
+      "suggest_enabled": false
+   },
+   "translate": {
+      "enabled": false
+   }
+}
+[1.031][INFO]: Populating Local State file: {
+   "background_mode": {
+      "enabled": false
+   },
+   "ssl": {
+      "rev_checking": {
+         "enabled": false
+      }
+   }
+}
+[1.060][INFO]: Launching chrome: "C:\Users\Administrator\AppData\Local\Google\Chrome\Application\chrome.exe" --disable-background-networking --disable-client-side-phishing-detection --disable-default-apps --disable-hang-monitor --disable-popup-blocking --disable-prompt-on-repost --disable-sync --disable-web-resources --enable-automation --enable-logging --force-fieldtrials=SiteIsolationExtensions/Control --ignore-certificate-errors --load-component-extension="C:\Users\ADMINI~1\AppData\Local\Temp\scoped_dir11440_13558\internal" --log-level=0 --metrics-recording-only --no-first-run --password-store=basic --remote-debugging-port=12034 --safebrowsing-disable-auto-update --test-type=webdriver --use-mock-keychain --user-data-dir="C:\Users\ADMINI~1\AppData\Local\Temp\scoped_dir11440_20" data:,
+[2.141][INFO]: resolved localhost to ["127.0.0.1"]
+[3.157][INFO]: RESPONSE InitSession {
+   "acceptSslCerts": true,
+   "applicationCacheEnabled": false,
+   "browserConnectionEnabled": false,
+   "browserName": "chrome",
+   "chrome": {
+      "chromedriverVersion": "2.30.477700 (0057494ad8732195794a7b32078424f92a5fce41)",
+      "userDataDir": "C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\scoped_dir11440_20"
+   },
+   "cssSelectorsEnabled": true,
+   "databaseEnabled": false,
+   "handlesAlerts": true,
+   "hasTouchScreen": false,
+   "javascriptEnabled": true,
+   "locationContextEnabled": true,
+   "mobileEmulationEnabled": false,
+   "nativeEvents": true,
+   "networkConnectionEnabled": false,
+   "pageLoadStrategy": "normal",
+   "platform": "Windows NT",
+   "rotatable": false,
+   "takesHeapSnapshot": true,
+   "takesScreenshot": true,
+   "~~~": "..."
+}
+[3.161][INFO]: COMMAND Navigate {
+   "sessionId": "bade74ad56b9bf64214170d2949a6cc9",
+   "url": "http://www.baidu.com"
+}
+[3.161][INFO]: Waiting for pending navigations...
+[3.162][INFO]: Done waiting for pending navigations. Status: ok
+[4.041][INFO]: Waiting for pending navigations...
+[4.513][INFO]: Done waiting for pending navigations. Status: ok
+[4.513][INFO]: RESPONSE Navigate
+[4.525][INFO]: COMMAND FindElement {
+   "sessionId": "bade74ad56b9bf64214170d2949a6cc9",
+   "using": "id",
+   "value": "kw"
+}
+[4.525][INFO]: Waiting for pending navigations...
+[4.529][INFO]: Done waiting for pending navigations. Status: ok
+[4.558][INFO]: Waiting for pending navigations...
+[4.559][INFO]: Done waiting for pending navigations. Status: ok
+[4.559][INFO]: RESPONSE FindElement {
+   "ELEMENT": "0.326821513228716-1"
+}
+[4.562][INFO]: COMMAND FindElement {
+   "sessionId": "bade74ad56b9bf64214170d2949a6cc9",
+   "using": "id",
+   "value": "su"
+}
+[4.562][INFO]: Waiting for pending navigations...
+[4.564][INFO]: Done waiting for pending navigations. Status: ok
+[4.587][INFO]: Waiting for pending navigations...
+[4.588][INFO]: Done waiting for pending navigations. Status: ok
+[4.588][INFO]: RESPONSE FindElement {
+   "ELEMENT": "0.326821513228716-2"
+}
+[4.591][INFO]: COMMAND TypeElement {
+   "id": "0.326821513228716-1",
+   "sessionId": "bade74ad56b9bf64214170d2949a6cc9",
+   "text": "开源测试1",
+   "value": [ "开", "源", "测", "试", "1" ]
+}
+[4.591][INFO]: Waiting for pending navigations...
+[4.592][INFO]: Done waiting for pending navigations. Status: ok
+[4.849][INFO]: Waiting for pending navigations...
+[4.856][INFO]: Done waiting for pending navigations. Status: ok
+[4.857][INFO]: RESPONSE TypeElement
+[4.860][INFO]: COMMAND ClickElement {
+   "id": "0.326821513228716-2",
+   "sessionId": "bade74ad56b9bf64214170d2949a6cc9"
+}
+[4.860][INFO]: Waiting for pending navigations...
+[4.861][INFO]: Done waiting for pending navigations. Status: ok
+[4.952][INFO]: Waiting for pending navigations...
+[4.976][INFO]: Done waiting for pending navigations. Status: ok
+[4.976][INFO]: RESPONSE ClickElement
+[9.980][INFO]: COMMAND GetTitle {
+
+}
+[9.980][INFO]: Waiting for pending navigations...
+[9.982][INFO]: Done waiting for pending navigations. Status: ok
+[9.985][INFO]: Waiting for pending navigations...
+[9.986][INFO]: Done waiting for pending navigations. Status: ok
+[9.986][INFO]: RESPONSE GetTitle "开源测试1_百度搜索"
+[10.076][INFO]: COMMAND GetUrl {
+
+}
+[10.076][INFO]: Waiting for pending navigations...
+[10.078][INFO]: Done waiting for pending navigations. Status: ok
+[10.081][INFO]: Waiting for pending navigations...
+[10.082][INFO]: Done waiting for pending navigations. Status: ok
+[10.083][INFO]: RESPONSE GetUrl "https://www.baidu.com/s?ie=utf-8&f=8&rsv_bp=0&rsv_idx=1&tn=baidu&wd=%E5%BC%80%E6%BA%90%E6%B5%8B%E8%AF%951&rsv_pq=ee652e7100022a13&rsv_t=f3ceXuOKkwZTHaffHr1hokt208MEoAo8autQpct0X1LnHgcd5QnXBlVPGTk&r..."
+[10.085][INFO]: COMMAND Screenshot {
+
+}
+[10.085][INFO]: Waiting for pending navigations...
+[10.086][INFO]: Done waiting for pending navigations. Status: ok
+[10.356][INFO]: Waiting for pending navigations...
+[10.357][INFO]: Done waiting for pending navigations. Status: ok
+[10.357][INFO]: RESPONSE Screenshot "iVBORw0KGgoAAAANSUhEUgAABAoAAAJACAYAAAAEt4QcAAAgAElEQVR4nOzde1yUVf7A8Q/3i4IIBiGo5DVUSMXE1JIKMm0x012t1KQSDXelVivaxdIKdqMtK/2tmJfyArrYeklK89KGd9HwAip5DS+gg4LIbRiGYX5/DIwzzHBVQev7fr14vZjnOc8z55lhhud8z..."
+[10.372][INFO]: COMMAND GetSource {
+
+}
+[10.372][INFO]: Waiting for pending navigations...
+[10.374][INFO]: Done waiting for pending navigations. Status: ok
+[10.433][INFO]: Waiting for pending navigations...
+[10.435][INFO]: Done waiting for pending navigations. Status: ok
+[10.435][INFO]: RESPONSE GetSource "\u003C!DOCTYPE html>\u003C!--STATUS OK-->\u003Chtml xmlns=\"http://www.w3.org/1999/xhtml\">\u003Chead>\n    \n    \u003Cmeta http-equiv=\"content-type\" content=\"text/html;charset=utf-8\" />\u003Cstyle data-for=\"result\" id=\"css_result..."
